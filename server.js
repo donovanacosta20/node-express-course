@@ -8,7 +8,7 @@ const mockUserData = [
 ]
 
 
-app.get('/users', function(){
+app.get('/users', function(req, res){
     res.json({
         sucess: true,
         massage: 'Succesfully got users. Nice!',
