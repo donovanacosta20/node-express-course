@@ -16,7 +16,18 @@ app.get('/users', function(req, res){
     })
 })
 
+
+app.get('/users/:id', function(req, res){
+
+    console.log(req.params.id);
+    res.json({
+        sucess: true,
+        message: 'get one user',
+        user: req.params.id
+        
+    })
+})
+
 app.listen(8000, function(){
     console.log("sever is running");
 });
-
